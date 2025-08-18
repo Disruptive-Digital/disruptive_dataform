@@ -1,6 +1,7 @@
 config {
  type: "view",
- dataset: "slickcity_arlington_ga4"
+ dataset: "slickcity_arlington_ga4",
+ tags: ["arlington", "ga4"]
 }
 
 SELECT '481587562' AS ga4_id,
