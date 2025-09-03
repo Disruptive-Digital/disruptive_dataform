@@ -1,6 +1,6 @@
 config {
     type: "view",
-    dataset: "slickcity_denton_google_ads",
+    dataset: "slickcity_denton_ga4",
     tags: ["denton", "ga4"]
     }
 

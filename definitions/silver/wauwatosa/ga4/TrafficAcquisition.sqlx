@@ -1,6 +1,6 @@
 config {
     type: "view",
-    dataset: "slickcity_wauwatosa_google_ads",
+    dataset: "slickcity_wauwatosa_ga4",
     tags: ["wauwatosa", "ga4"]
     }
 

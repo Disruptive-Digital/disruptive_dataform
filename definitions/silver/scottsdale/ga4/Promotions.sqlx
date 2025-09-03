@@ -1,6 +1,6 @@
 config {
     type: "view",
-    dataset: "slickcity_scottsdale_google_ads",
+    dataset: "slickcity_scottsdale_ga4",
     tags: ["scottsdale", "ga4"]
     }
 

@@ -1,6 +1,6 @@
 config {
     type: "view",
-    dataset: "slickcity_st_louis_west_google_ads",
+    dataset: "slickcity_st_louis_west_ga4",
     tags: ["st_louis_west", "ga4"]
     }
 

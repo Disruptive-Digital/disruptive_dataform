@@ -1,6 +1,6 @@
 config {
     type: "view",
-    dataset: "slickcity_brownsburg_google_ads",
+    dataset: "slickcity_brownsburg_ga4",
     tags: ["brownsburg", "ga4"]
     }
 
