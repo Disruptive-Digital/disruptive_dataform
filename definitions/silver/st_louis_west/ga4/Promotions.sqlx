@@ -8,5 +8,5 @@ config {
             *, 
         DATE (_PARTITIONTIME) AS date,
         MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
-    FROM `earnest-dogfish-465412-p1.slickcity_st_louis_west_ga4.p_ads_Promotions_5391978535`
+    FROM `earnest-dogfish-465412-p1.slickcity_st_louis_west_ga4.p_ga4_Promotions_341859634`
     
