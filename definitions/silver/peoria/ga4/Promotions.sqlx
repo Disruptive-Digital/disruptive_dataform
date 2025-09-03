@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_peoria_google_ads",
+    tags: ["peoria", "ga4"]
+    }
+
+    SELECT '443845275' AS ga4_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_peoria_ga4.p_ads_Promotions_5391978535`
+    

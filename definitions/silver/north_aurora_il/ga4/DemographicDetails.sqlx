@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_north_aurora_il_google_ads",
+    tags: ["north_aurora_il", "ga4"]
+    }
+
+    SELECT '461602416' AS ga4_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_north_aurora_il_ga4.p_ads_DemographicDetails_5391978535`
+    

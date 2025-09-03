@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_frisco_google_ads",
+    tags: ["frisco", "gads"]
+    }
+
+    SELECT '9141724488' AS gads_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_frisco_google_ads.p_ads_AdBasicStats_9141724488`
+    

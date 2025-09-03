@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_chandler_google_ads",
+    tags: ["chandler", "gads"]
+    }
+
+    SELECT '7645982984' AS gads_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_chandler_google_ads.p_ads_GenderConversionStats_7645982984`
+    

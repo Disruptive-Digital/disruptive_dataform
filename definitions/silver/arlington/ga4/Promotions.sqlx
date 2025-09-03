@@ -1,10 +1,12 @@
 config {
- type: "view",
- dataset: "slickcity_arlington_ga4"
-}
+    type: "view",
+    dataset: "slickcity_arlington_google_ads",
+    tags: ["arlington", "ga4"]
+    }
 
-SELECT '481587562' AS ga4_id,
-        *, 
-       DATE (_PARTITIONTIME) AS date,
-       MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
-FROM `earnest-dogfish-465412-p1.slickcity_arlington_ga4.p_ga4_Promotions_481587562`
+    SELECT '481587562' AS ga4_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_arlington_ga4.p_ads_Promotions_5391978535`
+    

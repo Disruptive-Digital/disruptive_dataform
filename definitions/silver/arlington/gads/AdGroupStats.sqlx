@@ -1,11 +1,12 @@
 config {
- type: "view",
- dataset: "slickcity_arlington_google_ads",
- tags: ["arlington", "gads"]
-}
+    type: "view",
+    dataset: "slickcity_arlington_google_ads",
+    tags: ["arlington", "gads"]
+    }
 
-SELECT '5391978535' AS gads_id,
-        *, 
-       DATE (_PARTITIONTIME) AS date,
-       MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
-FROM `earnest-dogfish-465412-p1.slickcity_arlington_google_ads.p_ads_AdGroupStats_5391978535`
+    SELECT '5391978535' AS gads_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_arlington_google_ads.p_ads_AdGroupStats_5391978535`
+    

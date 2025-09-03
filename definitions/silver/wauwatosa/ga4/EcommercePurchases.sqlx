@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_wauwatosa_google_ads",
+    tags: ["wauwatosa", "ga4"]
+    }
+
+    SELECT '475651326' AS ga4_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_wauwatosa_ga4.p_ads_EcommercePurchases_5391978535`
+    

@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_denton_google_ads",
+    tags: ["denton", "gads"]
+    }
+
+    SELECT '4075526668' AS gads_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_denton_google_ads.p_ads_CampaignCrossDeviceStats_4075526668`
+    

@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_brownsburg_google_ads",
+    tags: ["brownsburg", "ga4"]
+    }
+
+    SELECT '481605391' AS ga4_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_brownsburg_ga4.p_ads_UserAcquisition_5391978535`
+    

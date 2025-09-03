@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_denton_google_ads",
+    tags: ["denton", "ga4"]
+    }
+
+    SELECT '455608463' AS ga4_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_denton_ga4.p_ads_TechDetails_5391978535`
+    

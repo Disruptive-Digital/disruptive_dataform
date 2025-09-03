@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_north_aurora_il_google_ads",
+    tags: ["north_aurora_il", "gads"]
+    }
+
+    SELECT '7652229319' AS gads_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_north_aurora_il_google_ads.p_ads_CampaignLocationTargetStats_7652229319`
+    

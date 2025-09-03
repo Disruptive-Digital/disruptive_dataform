@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_st_louis_west_google_ads",
+    tags: ["st_louis_west", "gads"]
+    }
+
+    SELECT '4898727056' AS gads_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_st_louis_west_google_ads.p_ads_Video_4898727056`
+    

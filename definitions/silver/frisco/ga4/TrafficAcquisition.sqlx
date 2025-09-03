@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_frisco_google_ads",
+    tags: ["frisco", "ga4"]
+    }
+
+    SELECT '488486049' AS ga4_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_frisco_ga4.p_ads_TrafficAcquisition_5391978535`
+    

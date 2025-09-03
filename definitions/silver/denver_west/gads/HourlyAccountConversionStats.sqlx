@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_denver_west_google_ads",
+    tags: ["denver_west", "gads"]
+    }
+
+    SELECT '4599488731' AS gads_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_denver_west_google_ads.p_ads_HourlyAccountConversionStats_4599488731`
+    

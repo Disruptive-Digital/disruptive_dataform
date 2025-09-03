@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_queen_creek_google_ads",
+    tags: ["queen_creek", "ga4"]
+    }
+
+    SELECT '475658787' AS ga4_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_queen_creek_ga4.p_ads_UserAcquisition_5391978535`
+    

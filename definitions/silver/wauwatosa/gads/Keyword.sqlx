@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    dataset: "slickcity_wauwatosa_google_ads",
+    tags: ["wauwatosa", "gads"]
+    }
+
+    SELECT '1870794217' AS gads_id,
+            *, 
+        DATE (_PARTITIONTIME) AS date,
+        MAX(DATE(_PARTITIONTIME)) OVER() AS latest_date
+    FROM `earnest-dogfish-465412-p1.slickcity_wauwatosa_google_ads.p_ads_Keyword_1870794217`
+    
