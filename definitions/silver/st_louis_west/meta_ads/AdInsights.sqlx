@@ -1,0 +1,10 @@
+config {
+    type: "view",
+    dataset: "slickcity_st_louis_west_meta_ads",
+    tags: ["st_louis_west", "meta_ads"]
+    }
+
+    SELECT * 
+    FROM `earnest-dogfish-465412-p1.slickcity_meta_ads.AdInsights` 
+    WHERE AdAccountName LIKE "Slick City St Louis West"
+    

@@ -1,0 +1,10 @@
+config {
+    type: "view",
+    dataset: "slickcity_wauwatosa_meta_ads",
+    tags: ["wauwatosa", "meta_ads"]
+    }
+
+    SELECT * 
+    FROM `earnest-dogfish-465412-p1.slickcity_meta_ads.AdInsightsActions` 
+    WHERE AdAccountName LIKE "Slick City Wauwatosa"
+    

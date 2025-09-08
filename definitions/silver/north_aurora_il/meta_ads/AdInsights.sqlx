@@ -1,0 +1,10 @@
+config {
+    type: "view",
+    dataset: "slickcity_north_aurora_il_meta_ads",
+    tags: ["north_aurora_il", "meta_ads"]
+    }
+
+    SELECT * 
+    FROM `earnest-dogfish-465412-p1.slickcity_meta_ads.AdInsights` 
+    WHERE AdAccountName LIKE "Slick City North Aurora"
+    

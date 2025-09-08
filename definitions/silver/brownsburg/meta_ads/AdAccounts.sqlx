@@ -1,0 +1,10 @@
+config {
+    type: "view",
+    dataset: "slickcity_brownsburg_meta_ads",
+    tags: ["brownsburg", "meta_ads"]
+    }
+
+    SELECT * 
+    FROM `earnest-dogfish-465412-p1.slickcity_meta_ads.AdAccounts` 
+    WHERE Name LIKE "Slick City Brownsburg, IN"
+    

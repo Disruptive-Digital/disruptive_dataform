@@ -1,0 +1,10 @@
+config {
+    type: "view",
+    dataset: "slickcity_queen_creek_meta_ads",
+    tags: ["queen_creek", "meta_ads"]
+    }
+
+    SELECT * 
+    FROM `earnest-dogfish-465412-p1.slickcity_meta_ads.AdInsights` 
+    WHERE AdAccountName LIKE "Slick CIty Queen Creek"
+    
